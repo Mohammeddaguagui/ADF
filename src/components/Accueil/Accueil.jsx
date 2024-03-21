@@ -33,15 +33,15 @@ const Accueil = () => {
 
   return (
     <>
-      <div className="min-h-[650px] slideInRight bg-gray-100 " style={bgImage}>
-        <div className="min-h-[650px] backdrop-blur-md flex justify-center items-center">
+      <div className="min-h-screen sm:min-h-[650px] slideInRight bg-gray-100 "style={bgImage} >
+        <div className="min-h-screen sm:min-h-[650px] backdrop-blur-md flex justify-center items-center">
           <div className="container pb-8 sm:pb-0">
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {/* text content section */}
               <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
                 <h1
                   data-aos="zoom-out"
-                  className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                  className="text-3xl sm:text-4xl lg:text-5xl font-bold"
                 >
                   Welcome to {" "}
                   <span
@@ -69,7 +69,6 @@ const Accueil = () => {
                 <div data-aos="fade-left" data-aos-delay="300">
                   <img
                     src={imageId}
-                    alt="biryani img"
                     className="max-w-[430px] hover:scale-105 duration-300 w-full mx-auto drop-shadow-[-6px_20px_15px_rgba(0,0,0,1)]"
                   />
                 </div>
@@ -88,7 +87,7 @@ const Accueil = () => {
                                 : l3
                           );
                         }}
-                        alt="biryani img"
+                       
                         className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
                       />
                     </div>

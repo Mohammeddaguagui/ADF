@@ -1,4 +1,3 @@
-
 import s1 from "../../assets/s1.jpg";
 import s2 from "../../assets/s2.jpg";
 import s3 from "../../assets/s3.jpg";
@@ -38,9 +37,8 @@ const Services = () => {
           <HeaderTitle
             title="Vérifiez notre meilleur service"
             subtitle="Nos services"
-
           />
-          <div className="  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
 
             {ServicesData.map((service) => (
               <div key={service.id}
@@ -48,12 +46,11 @@ const Services = () => {
                 data-aos-delay={service.aosDelay}
                 className="rounded-2xl bg-white hover:bg-lime-400 hover:text-white relative shadow-xl duration-high group max-w-[300px]"
               >
-                <div className=" h-[100px]">
+                <div className="h-[100px]">
                   <img
-
                     src={service.img}
                     alt=""
-                    className=" max-w-[200px] block mx-auto transform -translate-y-16
+                    className="max-w-[200px] block mx-auto transform -translate-y-16
                    group-hover:scale-105 duration-300"
                   />
                 </div>

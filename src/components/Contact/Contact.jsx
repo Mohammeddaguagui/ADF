@@ -59,9 +59,18 @@ const Contact = () => {
     setFormErrors(newFormErrors);
     return isValid;
   };
-
+  const [message, setMessage] = useState('');
+  const handleClick = () => {
+    if (validateForm()) {
+    setMessage('Message envoyé avec succès!');
+    setTimeout(() => {
+      setMessage('');
+    }, 4000);
+  }
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
+    
 
 
     emailjs
@@ -80,6 +89,7 @@ const Contact = () => {
     if (validateForm()) {
       // Form is valid, submit the data
       console.log(formData);
+     
 
       // Reset form fields
       setFormData({
@@ -207,10 +217,13 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="inline-block bg-indigo-500 py-3 px-8 rounded-md shadow-lg font-semibold text-white hover:bg-indigo-600 focus:bg-indigo-600"
-                >
+                  onClick={handleClick} >
                   Send
                 </button>
-              </div>
+                <br /> <br /> 
+                {message && (
+                       <div className="bg-green-200 text-green-800 px-4 py-2 rounded-md bounce">  {message}    </div>)}
+               </div>
             </form>
           </div>
         </div>

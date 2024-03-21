@@ -1,3 +1,4 @@
+import aceuil2 from "../../assets/aceuil2.jpg";
 function Detaille() {
     return (
         <div className="relative bg-white py-16 sm:py-24">
@@ -16,7 +17,7 @@ function Detaille() {
                     </div>
                     <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
                         <div className="relative overflow-hidden rounded-2xl pt-80 pb-10 shadow-xl">
-                            <img className="absolute inset-0 h-full w-full object-cover" src="/src/assets/aceuil2.jpg" alt="" />
+                            <img className="absolute inset-0 h-full w-full object-cover" src={aceuil2} alt="" />
                             <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply"></div>
                             <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"></div>
                             <div className="relative px-8">

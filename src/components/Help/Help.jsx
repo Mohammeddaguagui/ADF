@@ -24,14 +24,17 @@ const Help = () => {
                 </h1>
                 <h1
                   data-aos="fade-up"
-                  className="text-3xl sm:text-4xl font-bold"
+                  className="text-2xl sm:text-4xl font-bold"
                 >
-                  NOUS SOMMES TOUJOURS À VOTRE DISPOSITION POUR N’IMPORTE QUELLE INFORMATION OU ÉCLAIRCISSEMENT
-
-                </h1>
+                  NOUS SOMMES TOUJOURS À VOTRE DISPOSITION POUR
+                   N’IMPORTE QUELLE INFORMATION </h1>
                 <p
                   data-aos="fade-up" className="text-sm text-gray-500 tracking-wide leading-5" >
-                  ADF EMBALLAGE, qui a un grand respect pour l’environnement, choisit soigneusement les matières premières à utiliser et recycle les déchets de production. Nous achetons des matières premières auprès de fournisseurs qualifiés et certifiés assurant ainsi un produit qui satisfait complètement nos clients et qui reflète le sentiment écologique de l’entreprise.
+                  ADF EMBALLAGE, qui a un grand respect pour l’environnement,
+                   choisit soigneusement les matières premières à utiliser et recycle les déchets de production. 
+                   Nous achetons des matières premières auprès de fournisseurs qualifiés et certifiés assurant ainsi un produit
+                    qui satisfait complètement nos clients
+                    et qui reflète le sentiment écologique de l’entreprise.
                   <br /> <br />
                   <button className="p-[2px] relative bounce" >
                     <div className="absolute inset-0 bg-gradient-to-r  from-lime-400 to-lime-200 rounded-lg" />
